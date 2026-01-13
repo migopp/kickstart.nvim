@@ -179,6 +179,10 @@ vim.o.shiftwidth = 4
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
+-- Moving lines up/down.
+vim.keymap.set('n', '<S-Down>', '<cmd>:m+<CR>')
+vim.keymap.set('n', '<S-Up>', '<cmd>:m-2<CR>')
+
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
